@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+<meta name="viewport" content="width=320"/>
+<style type="text/css"><!-- body { font-family:Arial; font-size:18px; color:#000000; margin: 0px; } --></style>
+</head>
+<body>
+<table style="margin-top: 5px; margin-bottom: 5px;" cellspacing="6">
+<tr><td><b><font size="4">What is BioGene?</font></b></td></tr>
+<tr><td>
+BioGene is an information tool for biological research.  Use BioGene to learn about gene function.  Enter a gene symbol or gene name, for example "CDK4" or "cyclin dependent kinase 4" and BioGene will retrieve its gene function and references into its function (GeneRIF).
+</td></tr>
+<tr><td><b><font size="4">Who developed BioGene?</font></b></td></tr>
+<tr><td>
+BioGene was originally developed for the iPhone (IOS) by Benjamin Gross under the direction of Chris Sander.  More recently, BioGene was developed for mobile web browsers by Nathan Marks.  Visit the <a href="http://cbio.mskcc.org/tools/iphone_ipodtouch.html">BioGene</a> web page for more information.
+</td></tr>
+<tr><td><b><font size="4">Where can I get more information?</font></b></td></tr>
+<tr><td>
+If you have any questions, please send an email to: <a href="mailto:biogene@cbio.mskcc.org?subject=BioGene">biogene@cbio.mskcc.org</a>
+</td></tr>
+<tr><td><b><font size="4">What is the current version of BioGene?</font></b></td></tr>
+<tr><td>
+The current version of BioGene is 1.1.
+</td></tr>
+<tr><td><b><font size="4">Where does BioGene get its data?</font></b></td></tr>
+<tr><td>
+BioGene provides primary information from <a href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=gene">Entrez Gene</a>, a searchable database hosted by the <a href="http://www.ncbi.nlm.nih.gov/">NCBI</a>.
+</td></tr>
+<tr><td><b><font size="4">What is a GeneRIF?</font></b></td></tr>
+<tr><td>
+A GeneRIF is a functional annotation of a gene described in Entrez Gene.  The annotation includes a link to a citation within PubMed which describes the function.  Please see <a href="http://www.ncbi.nlm.nih.gov/projects/GeneRIF/GeneRIFhelp.html">GeneRIF</a> for more information.
+</td></tr>
+<tr><td><b><font size="4">How does BioGene search Entrez Gene?</font></b></td></tr>
+<tr><td>
+BioGene attempts to match a query against a gene name (symbol).  If no matching records are found, BioGene applies mild increments in permissiveness until a match is found.  For example, if we are searching for the following single-term query, &#147;trk&#148;, BioGene will attempt the following sequence of queries in succession, stopping whenever one or more matching records is returned:
+<ul>
+<li>search for a gene name (symbol) that matches the exact sequence of characters &#147;trk&#148;</li>
+<li>search for a gene name (symbol) that starts with the sequence of characters  &#147;trk&#148;</li>
+<li>search for a gene name (symbol) that contains the sequence of characters &#147;trk&#148; within a word</li>
+<li>perform a free text search that matches the exact sequence of characters  &#147;trk&#148;</li>
+<li>perform a free text search that starts with the sequence of characters &#147;trk&#148;</li>
+<li>perform a free text search that contains the sequence of characters &#147;trk&#148; within a word</li>
+</ul>
+In Entrez Gene parlance, for the following single-term query &#147;trk&#148;, the following sequence of queries is attempted:
+<ul>
+<li>trk[pref]</li>
+<li>trk*[pref] OR trk[sym]</li>
+<li>trk*[sym]</li>
+<li>*trk*[sym]</li>
+<li>trk[All Fields]</li>
+<li>trk*[All Fields]</li>
+<li>*trk*[All Fields]</li>
+</ul>
+If however, we are searching for the following multi-term query, &#147;protein kinase 4&#148;, BioGene will attempt the following sequence of queries in succession, stopping whenever one or more matching records is returned:
+<ul>
+<li>search for a full gene name that matches the exact sequence of characters &#147;protein kinase 4&#148;</li>
+<li>perform a free text search that contains every term in the multi-term query &#147;protein kinase 4&#148;</li>
+<li>perform a free text search that contains one of the terms in the multi-term query &#147;protein kinase 4&#148;</li>
+</ul>
+In Entrez Gene parlance, for the following multi-term query &#147;protein kinase 4&#148;, the following sequence of queries is attempted:
+<ul>
+<li>protein+kinase+4[gene full name]</li>
+<li>protein[All Fields] OR kinase[All Fields] OR 4[All Fields]</li>
+</ul>
+If BioGene detects one or more of the following character sequences within the query:
+<table>
+<tr><td>
+&nbsp
+</td></tr>
+<tr>
+<td>[</td><td>&nbsp</td><td>]</td><td>&nbsp</td><td>*</td><td>&nbsp</td><td>AND</td><td>&nbsp</td><td>OR</td><td>&nbsp</td><td>NOT</td>
+</tr>
+<tr><td>
+&nbsp
+</td></tr>
+</table>
+it treats this as an &#147;advanced&#148; query and passes the query directly to Entrez Gene.  In this situation, BioGene ignores the organism filter specified in the application settings and expects the user to embed this filter within the query.
+</td></tr>
+<tr><td><b><font size="4">How can I customize BioGene?</font></b></td></tr>
+<tr><td>
+BioGene supports the following user settings:
+<ul>
+<li><b>Organism:</b> Unless an &#147;advanced&#147; query is entered, BioGene will instruct Entrez Gene to return records that match the specified organism.</li>
+<li><b>Show - RIFs Per Page:</b> Gene records within Entrez Gene may contain thousands of RIFs.  This setting instructs BioGene to limit the number of RIFs displayed per page to the desired number.</li>
+<li><b>Autorotation:</b> When autorotation is ON, BioGene will change the orientation of the user interface from portrait to landscape and vice versa to reflect the orientation of the iPhone.</li>
+<li><b>Fetch - Records Per Page:</b> In the event that a query matches a large number of records, BioGene will limit the number of records retrieved to this value. To retrieve subsequent records, pagination controls are provided.</li>
+</ul>
+</td></tr>
+</table>
+</body>
+</html>

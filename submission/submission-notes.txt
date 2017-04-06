@@ -1,0 +1,51 @@
+Company Name:
+
+Benjamin Gross
+
+Application Name:
+
+BioGene
+
+Application Description:
+
+BioGene is an information tool for biological research.  Use BioGene to learn about gene function.  Enter a gene symbol or gene name, for example "CDK4" or "cyclin dependent kinase 4" and BioGene will retrieve its gene function and references into its function (GeneRIF).
+
+BioGene was produced in affiliation with the Computational Biology Center at Memorial Sloan-Kettering Cancer Center with primary information from Entrez Gene at the NCBI.
+
+Device Requirements:
+
+iPhone and iPod touch
+
+Primary Category:
+
+Medical
+
+Copyright:
+
+2009 Benjamin Gross
+
+Version 1.0
+
+SKU:
+
+CBIO-BIOGENE-001
+
+Keywords:
+
+biology,DNA,function,gene,protein,pubmed,RNA,science,bioinformatics,abstract,genetics,species
+
+Support URL:
+
+http://cbio.mskcc.org/tools/iphone_ipodtouch.html#biogene
+
+Support Email Address:
+
+biogene@cbio.mskcc.org
+
+
+Primary screenshot (jpg or tif - 72DPI):
+
+320x480
+480x320
+320x460
+480x300
