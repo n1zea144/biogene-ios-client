@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import "Prefs.h"
 #import "Gene.h"
+#import <UIKit/UIKit.h>
 
 @interface InterfaceUtil : NSObject {}
 
