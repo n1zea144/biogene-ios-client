@@ -51,7 +51,6 @@
 		F5904BB91F94B1DF00BDF38B /* TallerSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B681F94B1DF00BDF38B /* TallerSearchView.xib */; };
 		F5904BBA1F94B1DF00BDF38B /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B6A1F94B1DF00BDF38B /* UIDevice+Resolutions.m */; };
 		F5904BBB1F94B1DF00BDF38B /* UINavigationController+autorotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B6C1F94B1DF00BDF38B /* UINavigationController+autorotation.m */; };
-		F5904BBC1F94B1DF00BDF38B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B6E1F94B1DF00BDF38B /* Default-568h@2x.png */; };
 		F5904BBD1F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */; };
 		F5904BBE1F94B1DF00BDF38B /* biogene-additional-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */; };
 		F5904BBF1F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */; };
@@ -85,6 +84,20 @@
 		F5904BDB1F94B1DF00BDF38B /* submission-notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5904B901F94B1DF00BDF38B /* submission-notes.txt */; };
 		F5904BDD1F94B1EB00BDF38B /* html in Resources */ = {isa = PBXBuildFile; fileRef = F5904BDC1F94B1EB00BDF38B /* html */; };
 		F5904BE01F94B23300BDF38B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5904BDF1F94B23300BDF38B /* libxml2.tbd */; };
+		F5BC68C01F9E103900098189 /* biogene-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BD1F9E103900098189 /* biogene-1024.png */; };
+		F5BC68C11F9E103900098189 /* biogene-logo-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BE1F9E103900098189 /* biogene-logo-120.png */; };
+		F5BC68C21F9E103900098189 /* biogene-logo-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BF1F9E103900098189 /* biogene-logo-180.png */; };
+		F5BC68C61F9E11B700098189 /* biogene-logo-40.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C41F9E11B700098189 /* biogene-logo-40.png */; };
+		F5BC68C71F9E11B700098189 /* biogene-logo-60.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C51F9E11B700098189 /* biogene-logo-60.png */; };
+		F5BC68CA1F9E126800098189 /* biogene-logo-58.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C81F9E126800098189 /* biogene-logo-58.png */; };
+		F5BC68CB1F9E126800098189 /* biogene-logo-87.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C91F9E126800098189 /* biogene-logo-87.png */; };
+		F5BC68CD1F9E12AE00098189 /* biogene-logo-80.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */; };
+		F5BC68CF1F9E130900098189 /* biogene-logo-20.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68CE1F9E130900098189 /* biogene-logo-20.png */; };
+		F5BC68D11F9E137300098189 /* biogene-logo-29.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D01F9E137300098189 /* biogene-logo-29.png */; };
+		F5BC68D51F9E13DA00098189 /* biogene-logo-76.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */; };
+		F5BC68D61F9E13DA00098189 /* biogene-logo-152.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */; };
+		F5BC68D71F9E13DA00098189 /* biogene-logo-167.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */; };
+		F5BC68E61F9E1A8400098189 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,7 +175,6 @@
 		F5904B6B1F94B1DF00BDF38B /* UINavigationController+autorotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+autorotation.h"; sourceTree = "<group>"; };
 		F5904B6C1F94B1DF00BDF38B /* UINavigationController+autorotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+autorotation.m"; sourceTree = "<group>"; };
 		F5904B6D1F94B1DF00BDF38B /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
-		F5904B6E1F94B1DF00BDF38B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-1-iphone5.jpg"; sourceTree = "<group>"; };
 		F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-1.jpg"; sourceTree = "<group>"; };
 		F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-2-iphone5.jpg"; sourceTree = "<group>"; };
@@ -196,6 +208,20 @@
 		F5904B901F94B1DF00BDF38B /* submission-notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "submission-notes.txt"; sourceTree = "<group>"; };
 		F5904BDC1F94B1EB00BDF38B /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		F5904BDF1F94B23300BDF38B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F5BC68BD1F9E103900098189 /* biogene-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-1024.png"; sourceTree = "<group>"; };
+		F5BC68BE1F9E103900098189 /* biogene-logo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-120.png"; sourceTree = "<group>"; };
+		F5BC68BF1F9E103900098189 /* biogene-logo-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-180.png"; sourceTree = "<group>"; };
+		F5BC68C41F9E11B700098189 /* biogene-logo-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-40.png"; sourceTree = "<group>"; };
+		F5BC68C51F9E11B700098189 /* biogene-logo-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-60.png"; sourceTree = "<group>"; };
+		F5BC68C81F9E126800098189 /* biogene-logo-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-58.png"; sourceTree = "<group>"; };
+		F5BC68C91F9E126800098189 /* biogene-logo-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-87.png"; sourceTree = "<group>"; };
+		F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-80.png"; sourceTree = "<group>"; };
+		F5BC68CE1F9E130900098189 /* biogene-logo-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-20.png"; sourceTree = "<group>"; };
+		F5BC68D01F9E137300098189 /* biogene-logo-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-29.png"; sourceTree = "<group>"; };
+		F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-76.png"; sourceTree = "<group>"; };
+		F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-152.png"; sourceTree = "<group>"; };
+		F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-167.png"; sourceTree = "<group>"; };
+		F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,7 +261,6 @@
 				F5904B261F94B1DF00BDF38B /* biogene-logo-114-by-114.png */,
 				F5904B271F94B1DF00BDF38B /* Classes */,
 				F5904B6D1F94B1DF00BDF38B /* constants.h */,
-				F5904B6E1F94B1DF00BDF38B /* Default-568h@2x.png */,
 				F5904B6F1F94B1DF00BDF38B /* images */,
 				F5904B8C1F94B1DF00BDF38B /* LICENSE */,
 				F5904B8D1F94B1DF00BDF38B /* main.m */,
@@ -243,6 +268,7 @@
 				F5904B8F1F94B1DF00BDF38B /* submission */,
 				F5904B1F1F94B18000BDF38B /* Info.plist */,
 				F5854E991F94DA3000CAEB85 /* Images.xcassets */,
+				F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */,
 			);
 			path = "biogene-ios-client";
 			sourceTree = "<group>";
@@ -333,6 +359,7 @@
 		F5904B6F1F94B1DF00BDF38B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F5BC68C31F9E10C700098189 /* Appicons */,
 				F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */,
 				F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */,
 				F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */,
@@ -386,6 +413,26 @@
 				F5904BDF1F94B23300BDF38B /* libxml2.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5BC68C31F9E10C700098189 /* Appicons */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */,
+				F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */,
+				F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */,
+				F5BC68D01F9E137300098189 /* biogene-logo-29.png */,
+				F5BC68CE1F9E130900098189 /* biogene-logo-20.png */,
+				F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */,
+				F5BC68C81F9E126800098189 /* biogene-logo-58.png */,
+				F5BC68C91F9E126800098189 /* biogene-logo-87.png */,
+				F5BC68C41F9E11B700098189 /* biogene-logo-40.png */,
+				F5BC68C51F9E11B700098189 /* biogene-logo-60.png */,
+				F5BC68BD1F9E103900098189 /* biogene-1024.png */,
+				F5BC68BE1F9E103900098189 /* biogene-logo-120.png */,
+				F5BC68BF1F9E103900098189 /* biogene-logo-180.png */,
+			);
+			name = Appicons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,15 +498,19 @@
 				F5904BB91F94B1DF00BDF38B /* TallerSearchView.xib in Resources */,
 				F5904BC31F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg in Resources */,
 				F5904BCC1F94B1DF00BDF38B /* biogene-primary.jpg in Resources */,
+				F5BC68D11F9E137300098189 /* biogene-logo-29.png in Resources */,
 				F5904BA31F94B1DF00BDF38B /* PrefsView.xib in Resources */,
 				F5904B9C1F94B1DF00BDF38B /* MiscMessageView.xib in Resources */,
+				F5BC68CA1F9E126800098189 /* biogene-logo-58.png in Resources */,
 				F5904BC11F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg in Resources */,
 				F5904BAC1F94B1DF00BDF38B /* RIFView.xib in Resources */,
+				F5BC68D61F9E13DA00098189 /* biogene-logo-152.png in Resources */,
 				F5904B9E1F94B1DF00BDF38B /* NoResultsView.xib in Resources */,
 				F5904BD51F94B1DF00BDF38B /* biogene-function.png in Resources */,
 				F5904BB51F94B1DF00BDF38B /* SummaryView.xib in Resources */,
 				F5904BBD1F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg in Resources */,
 				F5904BBE1F94B1DF00BDF38B /* biogene-additional-1.jpg in Resources */,
+				F5BC68C61F9E11B700098189 /* biogene-logo-40.png in Resources */,
 				F5904BD21F94B1DF00BDF38B /* text-small.png in Resources */,
 				F5904BC61F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */,
 				F5904B9A1F94B1DF00BDF38B /* MainWindow-iPad.xib in Resources */,
@@ -469,33 +520,42 @@
 				F5904B971F94B1DF00BDF38B /* InfoView.xib in Resources */,
 				F5904BDB1F94B1DF00BDF38B /* submission-notes.txt in Resources */,
 				F5904BD61F94B1DF00BDF38B /* biogene-search-thumb.png in Resources */,
+				F5BC68CF1F9E130900098189 /* biogene-logo-20.png in Resources */,
 				F5904BB31F94B1DF00BDF38B /* SearchView.xib in Resources */,
 				F5904BC81F94B1DF00BDF38B /* biogene-logo-large.png in Resources */,
 				F5904BDA1F94B1DF00BDF38B /* Settings.bundle in Resources */,
+				F5BC68C21F9E103900098189 /* biogene-logo-180.png in Resources */,
 				F5904BCB1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg in Resources */,
+				F5BC68C11F9E103900098189 /* biogene-logo-120.png in Resources */,
 				F5904BC21F94B1DF00BDF38B /* biogene-additional-3.jpg in Resources */,
 				F5904BC51F94B1DF00BDF38B /* biogene-logo-114-by-114.ai in Resources */,
 				F5904BD31F94B1DF00BDF38B /* up.png in Resources */,
-				F5904BBC1F94B1DF00BDF38B /* Default-568h@2x.png in Resources */,
 				F5904BCE1F94B1DF00BDF38B /* settings.png in Resources */,
 				F5904BA11F94B1DF00BDF38B /* PrefsPickerView.xib in Resources */,
 				F5904BC01F94B1DF00BDF38B /* biogene-additional-2.jpg in Resources */,
 				F5904B941F94B1DF00BDF38B /* FunctionView.xib in Resources */,
 				F5904BCF1F94B1DF00BDF38B /* text-large.ai in Resources */,
 				F5904BB71F94B1DF00BDF38B /* SwitchView.xib in Resources */,
+				F5BC68E61F9E1A8400098189 /* Launch Screen.storyboard in Resources */,
 				F5904BC41F94B1DF00BDF38B /* biogene-additional-4.jpg in Resources */,
+				F5BC68CD1F9E12AE00098189 /* biogene-logo-80.png in Resources */,
+				F5BC68C71F9E11B700098189 /* biogene-logo-60.png in Resources */,
+				F5BC68C01F9E103900098189 /* biogene-1024.png in Resources */,
 				F5904BD71F94B1DF00BDF38B /* biogene-search.png in Resources */,
 				F5904BD81F94B1DF00BDF38B /* LICENSE in Resources */,
 				F5904BCA1F94B1DF00BDF38B /* biogene-logo.png in Resources */,
 				F5904B911F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */,
 				F5904BA81F94B1DF00BDF38B /* PubMedView.xib in Resources */,
+				F5BC68D51F9E13DA00098189 /* biogene-logo-76.png in Resources */,
 				F5904BD41F94B1DF00BDF38B /* biogene-function-thumb.png in Resources */,
 				F5904BD01F94B1DF00BDF38B /* text-large.png in Resources */,
 				F5904BBF1F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg in Resources */,
 				F5904BB11F94B1DF00BDF38B /* SearchResultsView.xib in Resources */,
 				F5904BC71F94B1DF00BDF38B /* biogene-logo-large.ai in Resources */,
+				F5BC68D71F9E13DA00098189 /* biogene-logo-167.png in Resources */,
 				F5904BDD1F94B1EB00BDF38B /* html in Resources */,
 				F5904BD11F94B1DF00BDF38B /* text-small.ai in Resources */,
+				F5BC68CB1F9E126800098189 /* biogene-logo-87.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
