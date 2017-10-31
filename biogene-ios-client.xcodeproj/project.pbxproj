@@ -208,6 +208,7 @@
 		F5904B901F94B1DF00BDF38B /* submission-notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "submission-notes.txt"; sourceTree = "<group>"; };
 		F5904BDC1F94B1EB00BDF38B /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		F5904BDF1F94B23300BDF38B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F5B499371FA8FA7700962BE4 /* constants_complete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants_complete.h; sourceTree = "<group>"; };
 		F5BC68BD1F9E103900098189 /* biogene-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-1024.png"; sourceTree = "<group>"; };
 		F5BC68BE1F9E103900098189 /* biogene-logo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-120.png"; sourceTree = "<group>"; };
 		F5BC68BF1F9E103900098189 /* biogene-logo-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-180.png"; sourceTree = "<group>"; };
@@ -256,6 +257,7 @@
 		F5904B0D1F94B18000BDF38B /* biogene-ios-client */ = {
 			isa = PBXGroup;
 			children = (
+				F5B499371FA8FA7700962BE4 /* constants_complete.h */,
 				F5904BDC1F94B1EB00BDF38B /* html */,
 				F5904B251F94B1DF00BDF38B /* biogene-client_Prefix.pch */,
 				F5904B261F94B1DF00BDF38B /* biogene-logo-114-by-114.png */,
