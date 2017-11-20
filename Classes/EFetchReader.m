@@ -2,6 +2,7 @@
 #import "Gene.h"
 #import "RIF.h"
 #import <libxml/tree.h>
+#import <UIKit/UIKit.h>
 
 // function prototypes for SAX callbacks.
 static void startElementSAX(void *ctx, const xmlChar *localname, const xmlChar *prefix, const xmlChar *URI, int nb_namespaces, const xmlChar **namespaces, int nb_attributes, int nb_defaulted, const xmlChar **attributes);
@@ -307,7 +308,7 @@ static void	endElementSAX(void *ctx, const xmlChar *localname, const xmlChar *pr
 			parser.currentGene.description = [parser currentString];
 		}
 		else if (!strncmp((const char *)localname, kEntrezgene_summary, kEntrezgene_summary_length)) {
-			parser.currentGene.function = [parser currentString];
+			parser.currentGene.summary = [parser currentString];
 		}
 		else if ((!strncmp((const char *)localname, kDBTag, kDBTag_length)) && ([[parser currentString] isEqualToString:@"MIM"])) {
 			parser.lookForMIM = YES;

@@ -53,11 +53,11 @@
 	self.uiWebView.dataDetectorTypes = UIDataDetectorTypeLink;
 
 	// load uiWebView from local html file
-    NSString *htmlFile = ([UIDevice currentResolution] == UIDevice_iPhoneTallerHiRes) ? @"taller-home" : @"home";
+    NSString *htmlFile = @"home";
 	NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:htmlFile ofType:@"html" inDirectory:@"html"]];
 	NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20.0];
 	[uiWebView loadRequest:request];
-	
+    
 	// setup rotation
 	self.view.autoresizesSubviews = YES;
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -73,6 +73,9 @@
 	[self.view insertSubview:activityView atIndex:1];
 	
     [super viewDidLoad];
+}
+- (void)viewDidLayoutSubviews {
+  self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 }
 
 - (BOOL)shouldAutorotate {

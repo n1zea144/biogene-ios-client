@@ -88,7 +88,7 @@
 }
 
 -(NSString*)getFontSizeAsString {
-	return [NSString stringWithFormat:@"%ipx", self.fontSize];
+	return [NSString stringWithFormat:@"%lipx", (long)self.fontSize];
 }
 
 -(NSString *)createFunctionHTML {
@@ -98,7 +98,7 @@
 
 	// replace base style font size property
 	NSString *style = [kFunctionBaseStyle stringByReplacingOccurrencesOfString:kFontSizePlaceHolder withString:[self getFontSizeAsString]];
-	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:style]];
+	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:@"%@", style]];
 	
 	toReturn = (gene.summary != nil && [gene.summary length] > 0) ?
 		[toReturn stringByAppendingString:gene.summary] :

@@ -83,7 +83,7 @@
 	NSString *toReturn = [NSString stringWithFormat:kHTMLHeader];
 	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:kNoResultsBaseStyle]];
 	NSString *h1Style = [kCustomH1Style stringByReplacingOccurrencesOfString:kFontSizePlaceHolder withString:[self getValueFontSizeAsString]];
-	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:h1Style]];
+	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:@"%@", h1Style]];
 	toReturn = [toReturn stringByAppendingString:[NSString stringWithFormat:@"<h1>%@</h1>" \
 												  "<p>" \
 												  "<h1>%@</h1>" \

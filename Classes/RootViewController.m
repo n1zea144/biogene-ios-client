@@ -25,7 +25,7 @@
 // class extension for private properties and methods
 @interface RootViewController ()
 
-@property BOOL hasSetupPrefs;
+@property BOOL hasSetupPrefs, hasInsertedSearchView;
 @property (retain, nonatomic) PrefsViewController *prefsViewController;
 @property (retain, nonatomic) InfoViewController *infoViewController;
 @property (retain, nonatomic) SearchViewController *searchViewController;
@@ -85,27 +85,35 @@
 
 - (void)viewDidLoad {
     
-    // setup our default view
-    SearchViewController *searchController = ([UIDevice currentResolution] == UIDevice_iPhoneTallerHiRes) ?
-    [[SearchViewController alloc] initWithNibName:@"TallerSearchView" bundle:nil] :
-    [[SearchViewController alloc] initWithNibName:@"SearchView" bundle:nil];
-
-    //SearchViewController *searchController = [[SearchViewController alloc] initWithNibName:@"SearchView" bundle:nil];
-	searchController.rootViewController = self;
-	self.searchViewController = searchController;
+    
 	
 	// following lines required to properly handle rotation
 	self.view.autoresizesSubviews = YES;
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	
-	[self.view insertSubview:searchController.view atIndex:0];
-	[searchController release];
-	[super viewDidLoad];
+	
     
     if (!self.hasSetupPrefs) {
 		[self setupPrefs];
 		self.hasSetupPrefs = YES;
 	}
+    [super viewDidLoad];
+}
+
+-(void)viewDidLayoutSubviews{
+    if (_hasInsertedSearchView) {
+        return;
+    }
+    _hasInsertedSearchView = true;
+    // setup our default view
+    
+    SearchViewController *searchController = [[SearchViewController alloc] initWithNibName:@"SearchView" bundle:nil];
+    searchController.rootViewController = self;
+    self.searchViewController = searchController;
+    
+    searchController.view.frame = CGRectMake(0, 10, self.view.frame.size.width, self.view.frame.size.height - 10);
+    [self.view insertSubview:searchController.view atIndex:0];
+    [searchController release];
 }
 
 - (BOOL)shouldAutorotate {

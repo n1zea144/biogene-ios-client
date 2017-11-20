@@ -2,38 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Title</key>
-	<string>BioGene</string>
-	<key>StringsTable</key>
-	<string>Root</string>
+	<key>CFBundleDisplayName</key>
+	<string>test</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
 	<key>PreferenceSpecifiers</key>
 	<array>
 		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>Filters</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
 			<string>Human</string>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>Organism</string>
 			<key>Key</key>
 			<string>organism</string>
-			<key>Values</key>
-			<array>
-				<string>Human</string>
-				<string>Mouse</string>
-				<string>Rat</string>
-				<string>Zebrafish</string>
-				<string>Fruit fly</string>
-				<string>Nematode</string>
-				<string>Arabidopsis</string>
-				<string>Yeast</string>
-			</array>
+			<key>Title</key>
+			<string>Organism</string>
 			<key>Titles</key>
 			<array>
 				<string>Human</string>
@@ -45,23 +38,34 @@
 				<string>Arabidopsis</string>
 				<string>Yeast</string>
 			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>Human</string>
+				<string>Mouse</string>
+				<string>Rat</string>
+				<string>Zebrafish</string>
+				<string>Fruit fly</string>
+				<string>Nematode</string>
+				<string>Arabidopsis</string>
+				<string>Yeast</string>
+			</array>
 		</dict>
 		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>Viewing</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
 			<key>DefaultValue</key>
 			<string>25 Genes Per Page</string>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>Show</string>
 			<key>Key</key>
 			<string>retmax</string>
-			<key>Values</key>
+			<key>Title</key>
+			<string>Show</string>
+			<key>Titles</key>
 			<array>
 				<string>5 Genes Per Page</string>
 				<string>10 Genes Per Page</string>
@@ -69,7 +73,9 @@
 				<string>50 Genes Per Page</string>
 				<string>100 Genes Per Page</string>
 			</array>
-			<key>Titles</key>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
 			<array>
 				<string>5 Genes Per Page</string>
 				<string>10 Genes Per Page</string>
@@ -81,13 +87,11 @@
 		<dict>
 			<key>DefaultValue</key>
 			<string>100 References Per Page</string>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>Show</string>
 			<key>Key</key>
 			<string>referencesPerPage</string>
-			<key>Values</key>
+			<key>Title</key>
+			<string>Show</string>
+			<key>Titles</key>
 			<array>
 				<string>25 References Per Page</string>
 				<string>50 References Per Page</string>
@@ -95,7 +99,9 @@
 				<string>100 References Per Page</string>
 				<string>200 References Per Page</string>
 			</array>
-			<key>Titles</key>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
 			<array>
 				<string>25 References Per Page</string>
 				<string>50 References Per Page</string>
@@ -105,19 +111,29 @@
 			</array>
 		</dict>
 		<dict>
-			<key>TrueValue</key>
+			<key>DefaultValue</key>
 			<string>enabled</string>
 			<key>FalseValue</key>
 			<string>disabled</string>
-			<key>DefaultValue</key>
-			<string>enabled</string>
 			<key>Key</key>
 			<string>enableRotation</string>
 			<key>Title</key>
 			<string>Autorotation</string>
+			<key>TrueValue</key>
+			<string>enabled</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>Title</key>
+	<string>BioGene</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
