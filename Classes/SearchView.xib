@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,11 +37,11 @@
                     </connections>
                 </webView>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7">
-                    <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="522" width="320" height="46"/>
                     <items>
                         <barButtonItem style="plain" id="34">
                             <button key="customView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="33">
-                                <rect key="frame" x="16" y="11" width="22" height="22"/>
+                                <rect key="frame" x="16" y="12" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal">
@@ -59,7 +59,7 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="9"/>
                         <barButtonItem style="plain" id="44">
                             <button key="customView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="43">
-                                <rect key="frame" x="278" y="10" width="26" height="24"/>
+                                <rect key="frame" x="278" y="11" width="26" height="24"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <state key="normal" image="settings.png">
@@ -79,8 +79,8 @@
                         <outlet property="delegate" destination="33" id="sLP-uA-eHz"/>
                     </connections>
                 </toolbar>
-                <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" misplaced="YES" text="" placeholder="Enter Gene Name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+                <searchBar opaque="NO" multipleTouchEnabled="YES" contentMode="redraw" text="" placeholder="Enter Gene Name" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="-10" width="320" height="56"/>
                     <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="11"/>
@@ -89,16 +89,17 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="7" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" id="B6T-kU-rfC"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="721-Jq-WnS"/>
                 <constraint firstItem="25" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="CsW-VI-Aae"/>
-                <constraint firstAttribute="bottom" secondItem="7" secondAttribute="bottom" id="Fya-wN-89N"/>
                 <constraint firstAttribute="trailing" secondItem="25" secondAttribute="trailing" id="Gnj-7j-Ont"/>
-                <constraint firstItem="25" firstAttribute="leading" secondItem="4" secondAttribute="leading" id="KBZ-tV-eED"/>
-                <constraint firstItem="7" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="VnE-yz-TZD"/>
-                <constraint firstItem="7" firstAttribute="top" secondItem="25" secondAttribute="bottom" id="eW7-Mx-vv8"/>
-                <constraint firstItem="25" firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="h8x-Uh-ZQU"/>
-                <constraint firstItem="25" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="jiS-bg-Ald"/>
+                <constraint firstItem="7" firstAttribute="leading" secondItem="25" secondAttribute="leading" id="K2v-Yd-dFt"/>
+                <constraint firstItem="7" firstAttribute="top" secondItem="25" secondAttribute="bottom" id="RMN-ff-5eQ"/>
+                <constraint firstItem="7" firstAttribute="bottom" secondItem="JLI-nb-SWw" secondAttribute="bottom" id="Tq7-mE-odz"/>
+                <constraint firstItem="4" firstAttribute="bottom" secondItem="25" secondAttribute="top" id="bHp-6q-hfw"/>
+                <constraint firstItem="7" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" id="dci-h2-IfS"/>
+                <constraint firstItem="4" firstAttribute="trailing" secondItem="25" secondAttribute="trailing" id="k37-PW-dR3"/>
                 <constraint firstItem="25" firstAttribute="centerY" secondItem="1" secondAttribute="centerY" id="vCC-8e-udH"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-10" id="xBq-Y8-0hE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="JLI-nb-SWw"/>
             <point key="canvasLocation" x="80" y="53"/>

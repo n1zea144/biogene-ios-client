@@ -8,8 +8,8 @@
  */
 
 // activity indicator view - if you adjust these, you need to adjust XXXActivityX, XXXActivityY below
-#define kActivityViewWidth 30
-#define kActivityViewHeight 30
+#define kActivityViewWidth 60
+#define kActivityViewHeight 60
 
 // general html header
 #define kHTMLHeader @"<html><head><meta name=\"viewport\" content=\"width=320\"/></head><body>"
@@ -108,15 +108,15 @@
 #define RIFS_PER_PAGE_INDEX 4   // following define should change if location of rifsPerPage filter in settings bundle changes
 
 // PrefsViewCell
-#define kCellHeight	24.0
-#define kCellLeftOffset	8.0
+#define kCellHeight    24.0
+#define kCellLeftOffset    8.0
 #define kCellTopOffset 12.0
 #define kAutorotationSwitchWidth 94.0
 #define kAutorotationSwitchHeight 27.0
 
 // SearchViewController string constants
-#define kSearchViewActivityViewX 145
-#define kSearchViewActivityViewY 205
+//#define kSearchViewActivityViewX 145
+//#define kSearchViewActivityViewY 205
 #define kUnexpectedErrorTitle @"Communications Error"
 #define kUnexpectedError @"There was a problem communicating with the BioGene data server.  Please try again."
 
@@ -181,3 +181,4 @@
 
 // MiscMessageViewController
 #define kMiscMessageViewControllerTitle @"Search Results"
+

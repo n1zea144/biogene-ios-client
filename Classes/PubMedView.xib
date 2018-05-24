@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,6 +23,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="32">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                     <items>
@@ -38,16 +45,6 @@
                         </barButtonItem>
                     </items>
                 </toolbar>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="32">
-                    <rect key="frame" x="110" y="11" width="100" height="22"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="100" id="39"/>
-                        <constraint firstAttribute="height" constant="22" id="40"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22">
                     <rect key="frame" x="0.0" y="416" width="320" height="44"/>
                     <items>
@@ -74,21 +71,24 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="27" firstAttribute="top" secondItem="18" secondAttribute="bottom" id="41"/>
-                <constraint firstItem="22" firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="42"/>
-                <constraint firstItem="18" firstAttribute="centerY" secondItem="32" secondAttribute="centerY" id="43"/>
-                <constraint firstItem="22" firstAttribute="top" secondItem="27" secondAttribute="bottom" id="44"/>
-                <constraint firstItem="18" firstAttribute="top" secondItem="8" secondAttribute="top" id="45"/>
                 <constraint firstItem="27" firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="46"/>
-                <constraint firstItem="22" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="47"/>
                 <constraint firstItem="27" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="48"/>
-                <constraint firstItem="18" firstAttribute="centerX" secondItem="32" secondAttribute="centerX" id="49"/>
-                <constraint firstItem="18" firstAttribute="trailing" secondItem="8" secondAttribute="trailing" id="50"/>
-                <constraint firstItem="18" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="51"/>
-                <constraint firstItem="22" firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="52"/>
+                <constraint firstItem="22" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" id="1kW-Zh-zBg"/>
+                <constraint firstItem="18" firstAttribute="bottom" secondItem="32" secondAttribute="bottom" id="5Eu-Fz-Hvt"/>
+                <constraint firstItem="22" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="5Ff-jr-0Vy"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="32" secondAttribute="leading" id="B17-t5-EGc"/>
+                <constraint firstItem="18" firstAttribute="bottom" secondItem="27" secondAttribute="top" id="OiP-7W-a5Z"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="27" secondAttribute="leading" id="OlM-q0-c6t"/>
+                <constraint firstItem="22" firstAttribute="top" secondItem="27" secondAttribute="bottom" id="QYh-Ev-tbh"/>
+                <constraint firstItem="18" firstAttribute="trailing" secondItem="32" secondAttribute="trailing" id="RZ0-3F-fQZ"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="WiM-Vm-qba" secondAttribute="top" id="TFx-Ox-sLK"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="32" secondAttribute="top" id="VEp-Cg-wCf"/>
+                <constraint firstItem="22" firstAttribute="bottom" secondItem="WiM-Vm-qba" secondAttribute="bottom" id="hfd-U2-PVj"/>
+                <constraint firstItem="18" firstAttribute="trailing" secondItem="27" secondAttribute="trailing" id="pfV-hm-Fdo"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="WiM-Vm-qba"/>
         </view>
     </objects>
     <resources>

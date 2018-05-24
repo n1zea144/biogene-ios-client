@@ -141,7 +141,7 @@
 	NSString *mim = nil;
 	if (gene.organism != nil && [gene.organism isEqualToString:kHomesapiens]) {
 		if (gene.mim != nil && [gene.mim length] > 0) {
-			mim = [NSString stringWithFormat:@"<tr><td><h2><b>%@</b><a href=\"http://www.ncbi.nlm.nih.gov/entrez/dispomim.cgi?id=%@\">%@</a></h2></td></tr>", kMIMHeading, gene.mim, gene.mim];
+			mim = [NSString stringWithFormat:@"<tr><td><h2><b>%@</b><a href=\"http://omim.org/entry/%@\">%@</a></h2></td></tr>", kMIMHeading, gene.mim, gene.mim];
 		}
 		else {
 			mim = [NSString stringWithFormat:@"<tr><td><h2><b>%@</b>%@</h2></td></tr>", kMIMHeading, kNoMIM];

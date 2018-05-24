@@ -44,9 +44,14 @@
 	
 	// setup activity view
 	// numbers determined from interface builder
-	CGRect activityViewRect = CGRectMake(kSearchViewActivityViewX, kSearchViewActivityViewY, kActivityViewWidth, kActivityViewHeight);
+    CGFloat width = CGRectGetWidth(self.view.bounds);
+    CGFloat height = CGRectGetHeight(self.view.bounds);
+	CGRect activityViewRect = CGRectMake(width/2 - kActivityViewWidth/2, height/2 - kActivityViewHeight, kActivityViewWidth, kActivityViewHeight);
 	activityView = [[UIActivityIndicatorView alloc] initWithFrame:activityViewRect];
-	activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
+	activityView.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    activityView.color = UIColor.whiteColor;
+    activityView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.5];
+    activityView.layer.cornerRadius = 5;
 	activityView.hidden = YES;
 	
 	// we only detect hyperlinks (no phone numbers)
