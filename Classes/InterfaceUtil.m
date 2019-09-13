@@ -8,6 +8,7 @@
 
 #import "InterfaceUtil.h"
 #import "constants.h"
+#import <UIKit/UIKit.h>
 
 // class extension for private properties and methods
 @interface InterfaceUtil ()

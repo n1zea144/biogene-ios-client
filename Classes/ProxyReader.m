@@ -2,6 +2,7 @@
 #import "Gene.h"
 #import "RIF.h"
 #import "constants.h"
+#import <UIKit/UIKit.h>
 
 static NSString *kReturnCode = @"return_code";
 static NSString *kGeneInfo = @"gene_info";

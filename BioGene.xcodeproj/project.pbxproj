@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F51B00561FC3201D00428B8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B8D1F94B1DF00BDF38B /* main.m */; };
+		F5854E971F94C60700CAEB85 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B581F94B1DF00BDF38B /* RootViewController.m */; };
+		F5854E981F94C61800CAEB85 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B591F94B1DF00BDF38B /* RootViewController.xib */; };
+		F5854E9A1F94DA3000CAEB85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5854E991F94DA3000CAEB85 /* Images.xcassets */; };
+		F5904B911F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B261F94B1DF00BDF38B /* biogene-logo-114-by-114.png */; };
+		F5904B921F94B1DF00BDF38B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B291F94B1DF00BDF38B /* AppDelegate.m */; };
+		F5904B931F94B1DF00BDF38B /* EFetchReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B2B1F94B1DF00BDF38B /* EFetchReader.m */; };
+		F5904B941F94B1DF00BDF38B /* FunctionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B2C1F94B1DF00BDF38B /* FunctionView.xib */; };
+		F5904B951F94B1DF00BDF38B /* FunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B2E1F94B1DF00BDF38B /* FunctionViewController.m */; };
+		F5904B961F94B1DF00BDF38B /* Gene.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B301F94B1DF00BDF38B /* Gene.m */; };
+		F5904B971F94B1DF00BDF38B /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B311F94B1DF00BDF38B /* InfoView.xib */; };
+		F5904B981F94B1DF00BDF38B /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B331F94B1DF00BDF38B /* InfoViewController.m */; };
+		F5904B991F94B1DF00BDF38B /* InterfaceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B351F94B1DF00BDF38B /* InterfaceUtil.m */; };
+		F5904B9A1F94B1DF00BDF38B /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B371F94B1DF00BDF38B /* MainWindow-iPad.xib */; };
+		F5904B9B1F94B1DF00BDF38B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B381F94B1DF00BDF38B /* MainWindow.xib */; };
+		F5904B9C1F94B1DF00BDF38B /* MiscMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B391F94B1DF00BDF38B /* MiscMessageView.xib */; };
+		F5904B9D1F94B1DF00BDF38B /* MiscMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B3B1F94B1DF00BDF38B /* MiscMessageViewController.m */; };
+		F5904B9E1F94B1DF00BDF38B /* NoResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B3C1F94B1DF00BDF38B /* NoResultsView.xib */; };
+		F5904B9F1F94B1DF00BDF38B /* NoResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B3E1F94B1DF00BDF38B /* NoResultsViewController.m */; };
+		F5904BA01F94B1DF00BDF38B /* Prefs.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B401F94B1DF00BDF38B /* Prefs.m */; };
+		F5904BA11F94B1DF00BDF38B /* PrefsPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B411F94B1DF00BDF38B /* PrefsPickerView.xib */; };
+		F5904BA21F94B1DF00BDF38B /* PrefsPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B431F94B1DF00BDF38B /* PrefsPickerViewController.m */; };
+		F5904BA31F94B1DF00BDF38B /* PrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B441F94B1DF00BDF38B /* PrefsView.xib */; };
+		F5904BA41F94B1DF00BDF38B /* PrefsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B461F94B1DF00BDF38B /* PrefsViewCell.m */; };
+		F5904BA51F94B1DF00BDF38B /* PrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B481F94B1DF00BDF38B /* PrefsViewController.m */; };
+		F5904BA61F94B1DF00BDF38B /* ProxyReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B4A1F94B1DF00BDF38B /* ProxyReader.m */; };
+		F5904BA71F94B1DF00BDF38B /* ProxyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B4C1F94B1DF00BDF38B /* ProxyUtil.m */; };
+		F5904BA81F94B1DF00BDF38B /* PubMedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B4D1F94B1DF00BDF38B /* PubMedView.xib */; };
+		F5904BA91F94B1DF00BDF38B /* PubMedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B4F1F94B1DF00BDF38B /* PubMedViewController.m */; };
+		F5904BAA1F94B1DF00BDF38B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B511F94B1DF00BDF38B /* Reachability.m */; };
+		F5904BAB1F94B1DF00BDF38B /* RIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B531F94B1DF00BDF38B /* RIF.m */; };
+		F5904BAC1F94B1DF00BDF38B /* RIFView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B541F94B1DF00BDF38B /* RIFView.xib */; };
+		F5904BAD1F94B1DF00BDF38B /* RIFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B561F94B1DF00BDF38B /* RIFViewController.m */; };
+		F5904BB01F94B1DF00BDF38B /* SearchResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B5B1F94B1DF00BDF38B /* SearchResultsCell.m */; };
+		F5904BB11F94B1DF00BDF38B /* SearchResultsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B5C1F94B1DF00BDF38B /* SearchResultsView.xib */; };
+		F5904BB21F94B1DF00BDF38B /* SearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B5E1F94B1DF00BDF38B /* SearchResultsViewController.m */; };
+		F5904BB31F94B1DF00BDF38B /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B5F1F94B1DF00BDF38B /* SearchView.xib */; };
+		F5904BB41F94B1DF00BDF38B /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B611F94B1DF00BDF38B /* SearchViewController.m */; };
+		F5904BB51F94B1DF00BDF38B /* SummaryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B621F94B1DF00BDF38B /* SummaryView.xib */; };
+		F5904BB61F94B1DF00BDF38B /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B641F94B1DF00BDF38B /* SummaryViewController.m */; };
+		F5904BB71F94B1DF00BDF38B /* SwitchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B651F94B1DF00BDF38B /* SwitchView.xib */; };
+		F5904BB81F94B1DF00BDF38B /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B671F94B1DF00BDF38B /* SwitchViewController.m */; };
+		F5904BB91F94B1DF00BDF38B /* TallerSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5904B681F94B1DF00BDF38B /* TallerSearchView.xib */; };
+		F5904BBA1F94B1DF00BDF38B /* UIDevice+Resolutions.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B6A1F94B1DF00BDF38B /* UIDevice+Resolutions.m */; };
+		F5904BBB1F94B1DF00BDF38B /* UINavigationController+autorotation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904B6C1F94B1DF00BDF38B /* UINavigationController+autorotation.m */; };
+		F5904BBD1F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */; };
+		F5904BBE1F94B1DF00BDF38B /* biogene-additional-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */; };
+		F5904BBF1F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */; };
+		F5904BC01F94B1DF00BDF38B /* biogene-additional-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B731F94B1DF00BDF38B /* biogene-additional-2.jpg */; };
+		F5904BC11F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B741F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg */; };
+		F5904BC21F94B1DF00BDF38B /* biogene-additional-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B751F94B1DF00BDF38B /* biogene-additional-3.jpg */; };
+		F5904BC31F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B761F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg */; };
+		F5904BC41F94B1DF00BDF38B /* biogene-additional-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B771F94B1DF00BDF38B /* biogene-additional-4.jpg */; };
+		F5904BC51F94B1DF00BDF38B /* biogene-logo-114-by-114.ai in Resources */ = {isa = PBXBuildFile; fileRef = F5904B781F94B1DF00BDF38B /* biogene-logo-114-by-114.ai */; };
+		F5904BC61F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B791F94B1DF00BDF38B /* biogene-logo-114-by-114.png */; };
+		F5904BC71F94B1DF00BDF38B /* biogene-logo-large.ai in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7A1F94B1DF00BDF38B /* biogene-logo-large.ai */; };
+		F5904BC81F94B1DF00BDF38B /* biogene-logo-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7B1F94B1DF00BDF38B /* biogene-logo-large.png */; };
+		F5904BC91F94B1DF00BDF38B /* biogene-logo.ai in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7C1F94B1DF00BDF38B /* biogene-logo.ai */; };
+		F5904BCA1F94B1DF00BDF38B /* biogene-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7D1F94B1DF00BDF38B /* biogene-logo.png */; };
+		F5904BCB1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7E1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg */; };
+		F5904BCC1F94B1DF00BDF38B /* biogene-primary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F5904B7F1F94B1DF00BDF38B /* biogene-primary.jpg */; };
+		F5904BCD1F94B1DF00BDF38B /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B801F94B1DF00BDF38B /* down.png */; };
+		F5904BCE1F94B1DF00BDF38B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B811F94B1DF00BDF38B /* settings.png */; };
+		F5904BCF1F94B1DF00BDF38B /* text-large.ai in Resources */ = {isa = PBXBuildFile; fileRef = F5904B821F94B1DF00BDF38B /* text-large.ai */; };
+		F5904BD01F94B1DF00BDF38B /* text-large.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B831F94B1DF00BDF38B /* text-large.png */; };
+		F5904BD11F94B1DF00BDF38B /* text-small.ai in Resources */ = {isa = PBXBuildFile; fileRef = F5904B841F94B1DF00BDF38B /* text-small.ai */; };
+		F5904BD21F94B1DF00BDF38B /* text-small.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B851F94B1DF00BDF38B /* text-small.png */; };
+		F5904BD31F94B1DF00BDF38B /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B861F94B1DF00BDF38B /* up.png */; };
+		F5904BD41F94B1DF00BDF38B /* biogene-function-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B881F94B1DF00BDF38B /* biogene-function-thumb.png */; };
+		F5904BD51F94B1DF00BDF38B /* biogene-function.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B891F94B1DF00BDF38B /* biogene-function.png */; };
+		F5904BD61F94B1DF00BDF38B /* biogene-search-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B8A1F94B1DF00BDF38B /* biogene-search-thumb.png */; };
+		F5904BD71F94B1DF00BDF38B /* biogene-search.png in Resources */ = {isa = PBXBuildFile; fileRef = F5904B8B1F94B1DF00BDF38B /* biogene-search.png */; };
+		F5904BD81F94B1DF00BDF38B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F5904B8C1F94B1DF00BDF38B /* LICENSE */; };
+		F5904BDA1F94B1DF00BDF38B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F5904B8E1F94B1DF00BDF38B /* Settings.bundle */; };
+		F5904BDB1F94B1DF00BDF38B /* submission-notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = F5904B901F94B1DF00BDF38B /* submission-notes.txt */; };
+		F5904BDD1F94B1EB00BDF38B /* html in Resources */ = {isa = PBXBuildFile; fileRef = F5904BDC1F94B1EB00BDF38B /* html */; };
+		F5904BE01F94B23300BDF38B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5904BDF1F94B23300BDF38B /* libxml2.tbd */; };
+		F5BC68C01F9E103900098189 /* biogene-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BD1F9E103900098189 /* biogene-1024.png */; };
+		F5BC68C11F9E103900098189 /* biogene-logo-120.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BE1F9E103900098189 /* biogene-logo-120.png */; };
+		F5BC68C21F9E103900098189 /* biogene-logo-180.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68BF1F9E103900098189 /* biogene-logo-180.png */; };
+		F5BC68C61F9E11B700098189 /* biogene-logo-40.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C41F9E11B700098189 /* biogene-logo-40.png */; };
+		F5BC68C71F9E11B700098189 /* biogene-logo-60.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C51F9E11B700098189 /* biogene-logo-60.png */; };
+		F5BC68CA1F9E126800098189 /* biogene-logo-58.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C81F9E126800098189 /* biogene-logo-58.png */; };
+		F5BC68CB1F9E126800098189 /* biogene-logo-87.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68C91F9E126800098189 /* biogene-logo-87.png */; };
+		F5BC68CD1F9E12AE00098189 /* biogene-logo-80.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */; };
+		F5BC68CF1F9E130900098189 /* biogene-logo-20.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68CE1F9E130900098189 /* biogene-logo-20.png */; };
+		F5BC68D11F9E137300098189 /* biogene-logo-29.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D01F9E137300098189 /* biogene-logo-29.png */; };
+		F5BC68D51F9E13DA00098189 /* biogene-logo-76.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */; };
+		F5BC68D61F9E13DA00098189 /* biogene-logo-152.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */; };
+		F5BC68D71F9E13DA00098189 /* biogene-logo-167.png in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */; };
+		F5BC68E61F9E1A8400098189 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5854E991F94DA3000CAEB85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5904B0B1F94B18000BDF38B /* BioGene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BioGene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5904B1F1F94B18000BDF38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5904B251F94B1DF00BDF38B /* biogene-client_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "biogene-client_Prefix.pch"; sourceTree = "<group>"; };
+		F5904B261F94B1DF00BDF38B /* biogene-logo-114-by-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-114-by-114.png"; sourceTree = "<group>"; };
+		F5904B281F94B1DF00BDF38B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5904B291F94B1DF00BDF38B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5904B2A1F94B1DF00BDF38B /* EFetchReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFetchReader.h; sourceTree = "<group>"; };
+		F5904B2B1F94B1DF00BDF38B /* EFetchReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFetchReader.m; sourceTree = "<group>"; };
+		F5904B2C1F94B1DF00BDF38B /* FunctionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionView.xib; sourceTree = "<group>"; };
+		F5904B2D1F94B1DF00BDF38B /* FunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionViewController.h; sourceTree = "<group>"; };
+		F5904B2E1F94B1DF00BDF38B /* FunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionViewController.m; sourceTree = "<group>"; };
+		F5904B2F1F94B1DF00BDF38B /* Gene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gene.h; sourceTree = "<group>"; };
+		F5904B301F94B1DF00BDF38B /* Gene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gene.m; sourceTree = "<group>"; };
+		F5904B311F94B1DF00BDF38B /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		F5904B321F94B1DF00BDF38B /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		F5904B331F94B1DF00BDF38B /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		F5904B341F94B1DF00BDF38B /* InterfaceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceUtil.h; sourceTree = "<group>"; };
+		F5904B351F94B1DF00BDF38B /* InterfaceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceUtil.m; sourceTree = "<group>"; };
+		F5904B371F94B1DF00BDF38B /* MainWindow-iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow-iPad.xib"; sourceTree = "<group>"; };
+		F5904B381F94B1DF00BDF38B /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F5904B391F94B1DF00BDF38B /* MiscMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiscMessageView.xib; sourceTree = "<group>"; };
+		F5904B3A1F94B1DF00BDF38B /* MiscMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscMessageViewController.h; sourceTree = "<group>"; };
+		F5904B3B1F94B1DF00BDF38B /* MiscMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscMessageViewController.m; sourceTree = "<group>"; };
+		F5904B3C1F94B1DF00BDF38B /* NoResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoResultsView.xib; sourceTree = "<group>"; };
+		F5904B3D1F94B1DF00BDF38B /* NoResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoResultsViewController.h; sourceTree = "<group>"; };
+		F5904B3E1F94B1DF00BDF38B /* NoResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoResultsViewController.m; sourceTree = "<group>"; };
+		F5904B3F1F94B1DF00BDF38B /* Prefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefs.h; sourceTree = "<group>"; };
+		F5904B401F94B1DF00BDF38B /* Prefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prefs.m; sourceTree = "<group>"; };
+		F5904B411F94B1DF00BDF38B /* PrefsPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsPickerView.xib; sourceTree = "<group>"; };
+		F5904B421F94B1DF00BDF38B /* PrefsPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsPickerViewController.h; sourceTree = "<group>"; };
+		F5904B431F94B1DF00BDF38B /* PrefsPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsPickerViewController.m; sourceTree = "<group>"; };
+		F5904B441F94B1DF00BDF38B /* PrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrefsView.xib; sourceTree = "<group>"; };
+		F5904B451F94B1DF00BDF38B /* PrefsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsViewCell.h; sourceTree = "<group>"; };
+		F5904B461F94B1DF00BDF38B /* PrefsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsViewCell.m; sourceTree = "<group>"; };
+		F5904B471F94B1DF00BDF38B /* PrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefsViewController.h; sourceTree = "<group>"; };
+		F5904B481F94B1DF00BDF38B /* PrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefsViewController.m; sourceTree = "<group>"; };
+		F5904B491F94B1DF00BDF38B /* ProxyReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyReader.h; sourceTree = "<group>"; };
+		F5904B4A1F94B1DF00BDF38B /* ProxyReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyReader.m; sourceTree = "<group>"; };
+		F5904B4B1F94B1DF00BDF38B /* ProxyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyUtil.h; sourceTree = "<group>"; };
+		F5904B4C1F94B1DF00BDF38B /* ProxyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyUtil.m; sourceTree = "<group>"; };
+		F5904B4D1F94B1DF00BDF38B /* PubMedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PubMedView.xib; sourceTree = "<group>"; };
+		F5904B4E1F94B1DF00BDF38B /* PubMedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubMedViewController.h; sourceTree = "<group>"; };
+		F5904B4F1F94B1DF00BDF38B /* PubMedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PubMedViewController.m; sourceTree = "<group>"; };
+		F5904B501F94B1DF00BDF38B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F5904B511F94B1DF00BDF38B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		F5904B521F94B1DF00BDF38B /* RIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIF.h; sourceTree = "<group>"; };
+		F5904B531F94B1DF00BDF38B /* RIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIF.m; sourceTree = "<group>"; };
+		F5904B541F94B1DF00BDF38B /* RIFView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RIFView.xib; sourceTree = "<group>"; };
+		F5904B551F94B1DF00BDF38B /* RIFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIFViewController.h; sourceTree = "<group>"; };
+		F5904B561F94B1DF00BDF38B /* RIFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIFViewController.m; sourceTree = "<group>"; };
+		F5904B571F94B1DF00BDF38B /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		F5904B581F94B1DF00BDF38B /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		F5904B591F94B1DF00BDF38B /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		F5904B5A1F94B1DF00BDF38B /* SearchResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsCell.h; sourceTree = "<group>"; };
+		F5904B5B1F94B1DF00BDF38B /* SearchResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsCell.m; sourceTree = "<group>"; };
+		F5904B5C1F94B1DF00BDF38B /* SearchResultsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsView.xib; sourceTree = "<group>"; };
+		F5904B5D1F94B1DF00BDF38B /* SearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsViewController.h; sourceTree = "<group>"; };
+		F5904B5E1F94B1DF00BDF38B /* SearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsViewController.m; sourceTree = "<group>"; };
+		F5904B5F1F94B1DF00BDF38B /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
+		F5904B601F94B1DF00BDF38B /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		F5904B611F94B1DF00BDF38B /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		F5904B621F94B1DF00BDF38B /* SummaryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SummaryView.xib; sourceTree = "<group>"; };
+		F5904B631F94B1DF00BDF38B /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		F5904B641F94B1DF00BDF38B /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		F5904B651F94B1DF00BDF38B /* SwitchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchView.xib; sourceTree = "<group>"; };
+		F5904B661F94B1DF00BDF38B /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
+		F5904B671F94B1DF00BDF38B /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
+		F5904B681F94B1DF00BDF38B /* TallerSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TallerSearchView.xib; sourceTree = "<group>"; };
+		F5904B691F94B1DF00BDF38B /* UIDevice+Resolutions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Resolutions.h"; sourceTree = "<group>"; };
+		F5904B6A1F94B1DF00BDF38B /* UIDevice+Resolutions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Resolutions.m"; sourceTree = "<group>"; };
+		F5904B6B1F94B1DF00BDF38B /* UINavigationController+autorotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+autorotation.h"; sourceTree = "<group>"; };
+		F5904B6C1F94B1DF00BDF38B /* UINavigationController+autorotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+autorotation.m"; sourceTree = "<group>"; };
+		F5904B6D1F94B1DF00BDF38B /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-1-iphone5.jpg"; sourceTree = "<group>"; };
+		F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-1.jpg"; sourceTree = "<group>"; };
+		F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-2-iphone5.jpg"; sourceTree = "<group>"; };
+		F5904B731F94B1DF00BDF38B /* biogene-additional-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-2.jpg"; sourceTree = "<group>"; };
+		F5904B741F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-3-iphone5.jpg"; sourceTree = "<group>"; };
+		F5904B751F94B1DF00BDF38B /* biogene-additional-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-3.jpg"; sourceTree = "<group>"; };
+		F5904B761F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-4-iphone5.jpg"; sourceTree = "<group>"; };
+		F5904B771F94B1DF00BDF38B /* biogene-additional-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-additional-4.jpg"; sourceTree = "<group>"; };
+		F5904B781F94B1DF00BDF38B /* biogene-logo-114-by-114.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "biogene-logo-114-by-114.ai"; sourceTree = "<group>"; };
+		F5904B791F94B1DF00BDF38B /* biogene-logo-114-by-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-114-by-114.png"; sourceTree = "<group>"; };
+		F5904B7A1F94B1DF00BDF38B /* biogene-logo-large.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "biogene-logo-large.ai"; sourceTree = "<group>"; };
+		F5904B7B1F94B1DF00BDF38B /* biogene-logo-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-large.png"; sourceTree = "<group>"; };
+		F5904B7C1F94B1DF00BDF38B /* biogene-logo.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "biogene-logo.ai"; sourceTree = "<group>"; };
+		F5904B7D1F94B1DF00BDF38B /* biogene-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo.png"; sourceTree = "<group>"; };
+		F5904B7E1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-primary-iphone5.jpg"; sourceTree = "<group>"; };
+		F5904B7F1F94B1DF00BDF38B /* biogene-primary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "biogene-primary.jpg"; sourceTree = "<group>"; };
+		F5904B801F94B1DF00BDF38B /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		F5904B811F94B1DF00BDF38B /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		F5904B821F94B1DF00BDF38B /* text-large.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "text-large.ai"; sourceTree = "<group>"; };
+		F5904B831F94B1DF00BDF38B /* text-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-large.png"; sourceTree = "<group>"; };
+		F5904B841F94B1DF00BDF38B /* text-small.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "text-small.ai"; sourceTree = "<group>"; };
+		F5904B851F94B1DF00BDF38B /* text-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "text-small.png"; sourceTree = "<group>"; };
+		F5904B861F94B1DF00BDF38B /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		F5904B881F94B1DF00BDF38B /* biogene-function-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-function-thumb.png"; sourceTree = "<group>"; };
+		F5904B891F94B1DF00BDF38B /* biogene-function.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-function.png"; sourceTree = "<group>"; };
+		F5904B8A1F94B1DF00BDF38B /* biogene-search-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-search-thumb.png"; sourceTree = "<group>"; };
+		F5904B8B1F94B1DF00BDF38B /* biogene-search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-search.png"; sourceTree = "<group>"; };
+		F5904B8C1F94B1DF00BDF38B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F5904B8D1F94B1DF00BDF38B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5904B8E1F94B1DF00BDF38B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		F5904B901F94B1DF00BDF38B /* submission-notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "submission-notes.txt"; sourceTree = "<group>"; };
+		F5904BDC1F94B1EB00BDF38B /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		F5904BDF1F94B23300BDF38B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		F5BC68BD1F9E103900098189 /* biogene-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-1024.png"; sourceTree = "<group>"; };
+		F5BC68BE1F9E103900098189 /* biogene-logo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-120.png"; sourceTree = "<group>"; };
+		F5BC68BF1F9E103900098189 /* biogene-logo-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-180.png"; sourceTree = "<group>"; };
+		F5BC68C41F9E11B700098189 /* biogene-logo-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-40.png"; sourceTree = "<group>"; };
+		F5BC68C51F9E11B700098189 /* biogene-logo-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-60.png"; sourceTree = "<group>"; };
+		F5BC68C81F9E126800098189 /* biogene-logo-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-58.png"; sourceTree = "<group>"; };
+		F5BC68C91F9E126800098189 /* biogene-logo-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-87.png"; sourceTree = "<group>"; };
+		F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-80.png"; sourceTree = "<group>"; };
+		F5BC68CE1F9E130900098189 /* biogene-logo-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-20.png"; sourceTree = "<group>"; };
+		F5BC68D01F9E137300098189 /* biogene-logo-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-29.png"; sourceTree = "<group>"; };
+		F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-76.png"; sourceTree = "<group>"; };
+		F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-152.png"; sourceTree = "<group>"; };
+		F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biogene-logo-167.png"; sourceTree = "<group>"; };
+		F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5904B081F94B18000BDF38B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5904BE01F94B23300BDF38B /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5904B021F94B18000BDF38B = {
+			isa = PBXGroup;
+			children = (
+				F5904B0D1F94B18000BDF38B /* biogene-ios-client */,
+				F5904B0C1F94B18000BDF38B /* Products */,
+				F5904BDE1F94B23300BDF38B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5904B0C1F94B18000BDF38B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5904B0B1F94B18000BDF38B /* BioGene.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5904B0D1F94B18000BDF38B /* biogene-ios-client */ = {
+			isa = PBXGroup;
+			children = (
+				F5904BDC1F94B1EB00BDF38B /* html */,
+				F5904B251F94B1DF00BDF38B /* biogene-client_Prefix.pch */,
+				F5904B261F94B1DF00BDF38B /* biogene-logo-114-by-114.png */,
+				F5904B271F94B1DF00BDF38B /* Classes */,
+				F5904B6D1F94B1DF00BDF38B /* constants.h */,
+				F5904B6F1F94B1DF00BDF38B /* images */,
+				F5904B8C1F94B1DF00BDF38B /* LICENSE */,
+				F5904B8D1F94B1DF00BDF38B /* main.m */,
+				F5904B8E1F94B1DF00BDF38B /* Settings.bundle */,
+				F5904B8F1F94B1DF00BDF38B /* submission */,
+				F5904B1F1F94B18000BDF38B /* Info.plist */,
+				F5854E991F94DA3000CAEB85 /* Images.xcassets */,
+				F5BC68E51F9E1A8400098189 /* Launch Screen.storyboard */,
+			);
+			name = "biogene-ios-client";
+			sourceTree = "<group>";
+		};
+		F5904B271F94B1DF00BDF38B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5904B281F94B1DF00BDF38B /* AppDelegate.h */,
+				F5904B291F94B1DF00BDF38B /* AppDelegate.m */,
+				F5904B2A1F94B1DF00BDF38B /* EFetchReader.h */,
+				F5904B2B1F94B1DF00BDF38B /* EFetchReader.m */,
+				F5904B2C1F94B1DF00BDF38B /* FunctionView.xib */,
+				F5904B2D1F94B1DF00BDF38B /* FunctionViewController.h */,
+				F5904B2E1F94B1DF00BDF38B /* FunctionViewController.m */,
+				F5904B2F1F94B1DF00BDF38B /* Gene.h */,
+				F5904B301F94B1DF00BDF38B /* Gene.m */,
+				F5904B311F94B1DF00BDF38B /* InfoView.xib */,
+				F5904B321F94B1DF00BDF38B /* InfoViewController.h */,
+				F5904B331F94B1DF00BDF38B /* InfoViewController.m */,
+				F5904B341F94B1DF00BDF38B /* InterfaceUtil.h */,
+				F5904B351F94B1DF00BDF38B /* InterfaceUtil.m */,
+				F5904B361F94B1DF00BDF38B /* iPad */,
+				F5904B381F94B1DF00BDF38B /* MainWindow.xib */,
+				F5904B391F94B1DF00BDF38B /* MiscMessageView.xib */,
+				F5904B3A1F94B1DF00BDF38B /* MiscMessageViewController.h */,
+				F5904B3B1F94B1DF00BDF38B /* MiscMessageViewController.m */,
+				F5904B3C1F94B1DF00BDF38B /* NoResultsView.xib */,
+				F5904B3D1F94B1DF00BDF38B /* NoResultsViewController.h */,
+				F5904B3E1F94B1DF00BDF38B /* NoResultsViewController.m */,
+				F5904B3F1F94B1DF00BDF38B /* Prefs.h */,
+				F5904B401F94B1DF00BDF38B /* Prefs.m */,
+				F5904B411F94B1DF00BDF38B /* PrefsPickerView.xib */,
+				F5904B421F94B1DF00BDF38B /* PrefsPickerViewController.h */,
+				F5904B431F94B1DF00BDF38B /* PrefsPickerViewController.m */,
+				F5904B441F94B1DF00BDF38B /* PrefsView.xib */,
+				F5904B451F94B1DF00BDF38B /* PrefsViewCell.h */,
+				F5904B461F94B1DF00BDF38B /* PrefsViewCell.m */,
+				F5904B471F94B1DF00BDF38B /* PrefsViewController.h */,
+				F5904B481F94B1DF00BDF38B /* PrefsViewController.m */,
+				F5904B491F94B1DF00BDF38B /* ProxyReader.h */,
+				F5904B4A1F94B1DF00BDF38B /* ProxyReader.m */,
+				F5904B4B1F94B1DF00BDF38B /* ProxyUtil.h */,
+				F5904B4C1F94B1DF00BDF38B /* ProxyUtil.m */,
+				F5904B4D1F94B1DF00BDF38B /* PubMedView.xib */,
+				F5904B4E1F94B1DF00BDF38B /* PubMedViewController.h */,
+				F5904B4F1F94B1DF00BDF38B /* PubMedViewController.m */,
+				F5904B501F94B1DF00BDF38B /* Reachability.h */,
+				F5904B511F94B1DF00BDF38B /* Reachability.m */,
+				F5904B521F94B1DF00BDF38B /* RIF.h */,
+				F5904B531F94B1DF00BDF38B /* RIF.m */,
+				F5904B541F94B1DF00BDF38B /* RIFView.xib */,
+				F5904B551F94B1DF00BDF38B /* RIFViewController.h */,
+				F5904B561F94B1DF00BDF38B /* RIFViewController.m */,
+				F5904B571F94B1DF00BDF38B /* RootViewController.h */,
+				F5904B581F94B1DF00BDF38B /* RootViewController.m */,
+				F5904B591F94B1DF00BDF38B /* RootViewController.xib */,
+				F5904B5A1F94B1DF00BDF38B /* SearchResultsCell.h */,
+				F5904B5B1F94B1DF00BDF38B /* SearchResultsCell.m */,
+				F5904B5C1F94B1DF00BDF38B /* SearchResultsView.xib */,
+				F5904B5D1F94B1DF00BDF38B /* SearchResultsViewController.h */,
+				F5904B5E1F94B1DF00BDF38B /* SearchResultsViewController.m */,
+				F5904B5F1F94B1DF00BDF38B /* SearchView.xib */,
+				F5904B601F94B1DF00BDF38B /* SearchViewController.h */,
+				F5904B611F94B1DF00BDF38B /* SearchViewController.m */,
+				F5904B621F94B1DF00BDF38B /* SummaryView.xib */,
+				F5904B631F94B1DF00BDF38B /* SummaryViewController.h */,
+				F5904B641F94B1DF00BDF38B /* SummaryViewController.m */,
+				F5904B651F94B1DF00BDF38B /* SwitchView.xib */,
+				F5904B661F94B1DF00BDF38B /* SwitchViewController.h */,
+				F5904B671F94B1DF00BDF38B /* SwitchViewController.m */,
+				F5904B681F94B1DF00BDF38B /* TallerSearchView.xib */,
+				F5904B691F94B1DF00BDF38B /* UIDevice+Resolutions.h */,
+				F5904B6A1F94B1DF00BDF38B /* UIDevice+Resolutions.m */,
+				F5904B6B1F94B1DF00BDF38B /* UINavigationController+autorotation.h */,
+				F5904B6C1F94B1DF00BDF38B /* UINavigationController+autorotation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F5904B361F94B1DF00BDF38B /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				F5904B371F94B1DF00BDF38B /* MainWindow-iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		F5904B6F1F94B1DF00BDF38B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC68C31F9E10C700098189 /* Appicons */,
+				F5904B701F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg */,
+				F5904B711F94B1DF00BDF38B /* biogene-additional-1.jpg */,
+				F5904B721F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg */,
+				F5904B731F94B1DF00BDF38B /* biogene-additional-2.jpg */,
+				F5904B741F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg */,
+				F5904B751F94B1DF00BDF38B /* biogene-additional-3.jpg */,
+				F5904B761F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg */,
+				F5904B771F94B1DF00BDF38B /* biogene-additional-4.jpg */,
+				F5904B781F94B1DF00BDF38B /* biogene-logo-114-by-114.ai */,
+				F5904B791F94B1DF00BDF38B /* biogene-logo-114-by-114.png */,
+				F5904B7A1F94B1DF00BDF38B /* biogene-logo-large.ai */,
+				F5904B7B1F94B1DF00BDF38B /* biogene-logo-large.png */,
+				F5904B7C1F94B1DF00BDF38B /* biogene-logo.ai */,
+				F5904B7D1F94B1DF00BDF38B /* biogene-logo.png */,
+				F5904B7E1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg */,
+				F5904B7F1F94B1DF00BDF38B /* biogene-primary.jpg */,
+				F5904B801F94B1DF00BDF38B /* down.png */,
+				F5904B811F94B1DF00BDF38B /* settings.png */,
+				F5904B821F94B1DF00BDF38B /* text-large.ai */,
+				F5904B831F94B1DF00BDF38B /* text-large.png */,
+				F5904B841F94B1DF00BDF38B /* text-small.ai */,
+				F5904B851F94B1DF00BDF38B /* text-small.png */,
+				F5904B861F94B1DF00BDF38B /* up.png */,
+				F5904B871F94B1DF00BDF38B /* website */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F5904B871F94B1DF00BDF38B /* website */ = {
+			isa = PBXGroup;
+			children = (
+				F5904B881F94B1DF00BDF38B /* biogene-function-thumb.png */,
+				F5904B891F94B1DF00BDF38B /* biogene-function.png */,
+				F5904B8A1F94B1DF00BDF38B /* biogene-search-thumb.png */,
+				F5904B8B1F94B1DF00BDF38B /* biogene-search.png */,
+			);
+			path = website;
+			sourceTree = "<group>";
+		};
+		F5904B8F1F94B1DF00BDF38B /* submission */ = {
+			isa = PBXGroup;
+			children = (
+				F5904B901F94B1DF00BDF38B /* submission-notes.txt */,
+			);
+			path = submission;
+			sourceTree = "<group>";
+		};
+		F5904BDE1F94B23300BDF38B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5904BDF1F94B23300BDF38B /* libxml2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5BC68C31F9E10C700098189 /* Appicons */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC68D21F9E13DA00098189 /* biogene-logo-76.png */,
+				F5BC68D31F9E13DA00098189 /* biogene-logo-152.png */,
+				F5BC68D41F9E13DA00098189 /* biogene-logo-167.png */,
+				F5BC68D01F9E137300098189 /* biogene-logo-29.png */,
+				F5BC68CE1F9E130900098189 /* biogene-logo-20.png */,
+				F5BC68CC1F9E12AE00098189 /* biogene-logo-80.png */,
+				F5BC68C81F9E126800098189 /* biogene-logo-58.png */,
+				F5BC68C91F9E126800098189 /* biogene-logo-87.png */,
+				F5BC68C41F9E11B700098189 /* biogene-logo-40.png */,
+				F5BC68C51F9E11B700098189 /* biogene-logo-60.png */,
+				F5BC68BD1F9E103900098189 /* biogene-1024.png */,
+				F5BC68BE1F9E103900098189 /* biogene-logo-120.png */,
+				F5BC68BF1F9E103900098189 /* biogene-logo-180.png */,
+			);
+			name = Appicons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5904B0A1F94B18000BDF38B /* BioGene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5904B221F94B18000BDF38B /* Build configuration list for PBXNativeTarget "BioGene" */;
+			buildPhases = (
+				F5904B071F94B18000BDF38B /* Sources */,
+				F5904B081F94B18000BDF38B /* Frameworks */,
+				F5904B091F94B18000BDF38B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BioGene;
+			productName = "biogene-ios-client";
+			productReference = F5904B0B1F94B18000BDF38B /* BioGene.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5904B031F94B18000BDF38B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Vincent Hennig";
+				TargetAttributes = {
+					F5904B0A1F94B18000BDF38B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7A28PJUH4D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5904B061F94B18000BDF38B /* Build configuration list for PBXProject "BioGene" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5904B021F94B18000BDF38B;
+			productRefGroup = F5904B0C1F94B18000BDF38B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5904B0A1F94B18000BDF38B /* BioGene */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5904B091F94B18000BDF38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5854E981F94C61800CAEB85 /* RootViewController.xib in Resources */,
+				F5854E9A1F94DA3000CAEB85 /* Images.xcassets in Resources */,
+				F5904BB91F94B1DF00BDF38B /* TallerSearchView.xib in Resources */,
+				F5904BC31F94B1DF00BDF38B /* biogene-additional-4-iphone5.jpg in Resources */,
+				F5904BCC1F94B1DF00BDF38B /* biogene-primary.jpg in Resources */,
+				F5BC68D11F9E137300098189 /* biogene-logo-29.png in Resources */,
+				F5904BA31F94B1DF00BDF38B /* PrefsView.xib in Resources */,
+				F5904B9C1F94B1DF00BDF38B /* MiscMessageView.xib in Resources */,
+				F5BC68CA1F9E126800098189 /* biogene-logo-58.png in Resources */,
+				F5904BC11F94B1DF00BDF38B /* biogene-additional-3-iphone5.jpg in Resources */,
+				F5904BAC1F94B1DF00BDF38B /* RIFView.xib in Resources */,
+				F5BC68D61F9E13DA00098189 /* biogene-logo-152.png in Resources */,
+				F5904B9E1F94B1DF00BDF38B /* NoResultsView.xib in Resources */,
+				F5904BD51F94B1DF00BDF38B /* biogene-function.png in Resources */,
+				F5904BB51F94B1DF00BDF38B /* SummaryView.xib in Resources */,
+				F5904BBD1F94B1DF00BDF38B /* biogene-additional-1-iphone5.jpg in Resources */,
+				F5904BBE1F94B1DF00BDF38B /* biogene-additional-1.jpg in Resources */,
+				F5BC68C61F9E11B700098189 /* biogene-logo-40.png in Resources */,
+				F5904BD21F94B1DF00BDF38B /* text-small.png in Resources */,
+				F5904BC61F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */,
+				F5904B9A1F94B1DF00BDF38B /* MainWindow-iPad.xib in Resources */,
+				F5904B9B1F94B1DF00BDF38B /* MainWindow.xib in Resources */,
+				F5904BC91F94B1DF00BDF38B /* biogene-logo.ai in Resources */,
+				F5904BCD1F94B1DF00BDF38B /* down.png in Resources */,
+				F5904B971F94B1DF00BDF38B /* InfoView.xib in Resources */,
+				F5904BDB1F94B1DF00BDF38B /* submission-notes.txt in Resources */,
+				F5904BD61F94B1DF00BDF38B /* biogene-search-thumb.png in Resources */,
+				F5BC68CF1F9E130900098189 /* biogene-logo-20.png in Resources */,
+				F5904BB31F94B1DF00BDF38B /* SearchView.xib in Resources */,
+				F5904BC81F94B1DF00BDF38B /* biogene-logo-large.png in Resources */,
+				F5904BDA1F94B1DF00BDF38B /* Settings.bundle in Resources */,
+				F5BC68C21F9E103900098189 /* biogene-logo-180.png in Resources */,
+				F5904BCB1F94B1DF00BDF38B /* biogene-primary-iphone5.jpg in Resources */,
+				F5BC68C11F9E103900098189 /* biogene-logo-120.png in Resources */,
+				F5904BC21F94B1DF00BDF38B /* biogene-additional-3.jpg in Resources */,
+				F5904BC51F94B1DF00BDF38B /* biogene-logo-114-by-114.ai in Resources */,
+				F5904BD31F94B1DF00BDF38B /* up.png in Resources */,
+				F5904BCE1F94B1DF00BDF38B /* settings.png in Resources */,
+				F5904BA11F94B1DF00BDF38B /* PrefsPickerView.xib in Resources */,
+				F5904BC01F94B1DF00BDF38B /* biogene-additional-2.jpg in Resources */,
+				F5904B941F94B1DF00BDF38B /* FunctionView.xib in Resources */,
+				F5904BCF1F94B1DF00BDF38B /* text-large.ai in Resources */,
+				F5904BB71F94B1DF00BDF38B /* SwitchView.xib in Resources */,
+				F5BC68E61F9E1A8400098189 /* Launch Screen.storyboard in Resources */,
+				F5904BC41F94B1DF00BDF38B /* biogene-additional-4.jpg in Resources */,
+				F5BC68CD1F9E12AE00098189 /* biogene-logo-80.png in Resources */,
+				F5BC68C71F9E11B700098189 /* biogene-logo-60.png in Resources */,
+				F5BC68C01F9E103900098189 /* biogene-1024.png in Resources */,
+				F5904BD71F94B1DF00BDF38B /* biogene-search.png in Resources */,
+				F5904BD81F94B1DF00BDF38B /* LICENSE in Resources */,
+				F5904BCA1F94B1DF00BDF38B /* biogene-logo.png in Resources */,
+				F5904B911F94B1DF00BDF38B /* biogene-logo-114-by-114.png in Resources */,
+				F5904BA81F94B1DF00BDF38B /* PubMedView.xib in Resources */,
+				F5BC68D51F9E13DA00098189 /* biogene-logo-76.png in Resources */,
+				F5904BD41F94B1DF00BDF38B /* biogene-function-thumb.png in Resources */,
+				F5904BD01F94B1DF00BDF38B /* text-large.png in Resources */,
+				F5904BBF1F94B1DF00BDF38B /* biogene-additional-2-iphone5.jpg in Resources */,
+				F5904BB11F94B1DF00BDF38B /* SearchResultsView.xib in Resources */,
+				F5904BC71F94B1DF00BDF38B /* biogene-logo-large.ai in Resources */,
+				F5BC68D71F9E13DA00098189 /* biogene-logo-167.png in Resources */,
+				F5904BDD1F94B1EB00BDF38B /* html in Resources */,
+				F5904BD11F94B1DF00BDF38B /* text-small.ai in Resources */,
+				F5BC68CB1F9E126800098189 /* biogene-logo-87.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5904B071F94B18000BDF38B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51B00561FC3201D00428B8E /* main.m in Sources */,
+				F5854E971F94C60700CAEB85 /* RootViewController.m in Sources */,
+				F5904BA71F94B1DF00BDF38B /* ProxyUtil.m in Sources */,
+				F5904B961F94B1DF00BDF38B /* Gene.m in Sources */,
+				F5904B951F94B1DF00BDF38B /* FunctionViewController.m in Sources */,
+				F5904B9F1F94B1DF00BDF38B /* NoResultsViewController.m in Sources */,
+				F5904BAD1F94B1DF00BDF38B /* RIFViewController.m in Sources */,
+				F5904BA41F94B1DF00BDF38B /* PrefsViewCell.m in Sources */,
+				F5904BA21F94B1DF00BDF38B /* PrefsPickerViewController.m in Sources */,
+				F5904BBA1F94B1DF00BDF38B /* UIDevice+Resolutions.m in Sources */,
+				F5904BB41F94B1DF00BDF38B /* SearchViewController.m in Sources */,
+				F5904BAB1F94B1DF00BDF38B /* RIF.m in Sources */,
+				F5904BB81F94B1DF00BDF38B /* SwitchViewController.m in Sources */,
+				F5904BB21F94B1DF00BDF38B /* SearchResultsViewController.m in Sources */,
+				F5904BA61F94B1DF00BDF38B /* ProxyReader.m in Sources */,
+				F5904B921F94B1DF00BDF38B /* AppDelegate.m in Sources */,
+				F5904B981F94B1DF00BDF38B /* InfoViewController.m in Sources */,
+				F5904BA51F94B1DF00BDF38B /* PrefsViewController.m in Sources */,
+				F5904BAA1F94B1DF00BDF38B /* Reachability.m in Sources */,
+				F5904BBB1F94B1DF00BDF38B /* UINavigationController+autorotation.m in Sources */,
+				F5904BA91F94B1DF00BDF38B /* PubMedViewController.m in Sources */,
+				F5904BB61F94B1DF00BDF38B /* SummaryViewController.m in Sources */,
+				F5904B9D1F94B1DF00BDF38B /* MiscMessageViewController.m in Sources */,
+				F5904BA01F94B1DF00BDF38B /* Prefs.m in Sources */,
+				F5904B931F94B1DF00BDF38B /* EFetchReader.m in Sources */,
+				F5904BB01F94B1DF00BDF38B /* SearchResultsCell.m in Sources */,
+				F5904B991F94B1DF00BDF38B /* InterfaceUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5904B201F94B18000BDF38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5904B211F94B18000BDF38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5904B231F94B18000BDF38B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 7A28PJUH4D;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cbio.mskcc.BioGene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SYSTEM_HEADER_SEARCH_PATHS[arch=*]" = $SDKROOT/usr/include/libxml2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5904B241F94B18000BDF38B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 7A28PJUH4D;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cbio.mskcc.BioGene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SYSTEM_HEADER_SEARCH_PATHS[arch=*]" = $SDKROOT/usr/include/libxml2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5904B061F94B18000BDF38B /* Build configuration list for PBXProject "BioGene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5904B201F94B18000BDF38B /* Debug */,
+				F5904B211F94B18000BDF38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5904B221F94B18000BDF38B /* Build configuration list for PBXNativeTarget "BioGene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5904B231F94B18000BDF38B /* Debug */,
+				F5904B241F94B18000BDF38B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5904B031F94B18000BDF38B /* Project object */;
+}
